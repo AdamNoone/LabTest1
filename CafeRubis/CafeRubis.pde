@@ -8,6 +8,9 @@ void setup   ()
   loadData ();
   printProducts();
 }
+  // it does work ,but when you are clicking on a menu item you have to click a certain spot
+  
+  
   
 void loadData ()
 {
@@ -54,6 +57,7 @@ void draw ()
   
   TillLayout();
   displayProducts();
+  displayBill ();
   
   
 }
@@ -113,5 +117,39 @@ void TillLayout()
   
   
   
+  
+}
+
+void mousePressed ()
+{
+   for(Product product:products)
+  {
+      if (dist(mouseX, mouseY, product.screenPos+70, product.screenPos+70) < 100)
+      {
+        bill.add(product);
+      }
+  
+  }
+}
+
+void displayBill ()
+{
+   
+   
+   
+   
+   
+   
+   float total = 0 ;
+   for(Product product:bill)
+  {
+    total= total + product.price;
+   
+  }
+  stroke(255, 255, 0);
+   fill(0);
+   textSize(15);
+  
+  text(total, 600, 150);
   
 }
