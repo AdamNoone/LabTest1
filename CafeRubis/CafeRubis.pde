@@ -150,6 +150,8 @@ void displayBill ()
    fill(0);
    textSize(15);
   
-  text(total, 600, 150);
+  text(total, 730, 150);
+  
+  
   
 }
