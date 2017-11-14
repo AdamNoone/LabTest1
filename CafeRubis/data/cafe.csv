@@ -1,8 +1,8 @@
-Name,Price
-Americano, 2.50
-Cappuccino, 2.80
-Latte, 2.80
-Roibois Tea, 2.90
-Lemon & Ginger tea, 2.90 
-Chardonnay, 6.50
-Prosecco, 7.20
+Name,Price,ScreenPos
+Americano,2.5,60
+Cappuccino,2.8,130
+Latte,2.8,190
+Roibois Tea,2.9,260
+Lemon & Ginger tea,2.9,320
+Chardonnay,6.5,385
+Prosecco,7.2,450

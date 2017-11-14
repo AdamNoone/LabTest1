@@ -51,18 +51,30 @@ ArrayList<Product> bill = new ArrayList<Product>();
 
 void draw ()
 {
-  displayProducts();
+  
   TillLayout();
+  displayProducts();
   
   
 }
 
 void displayProducts ()
 {
-for(Product product:products)
+   for(Product product:products)
   {
+   float x = product.screenPos;
+   float y = product.screenPos;
    
+  
+   
+   stroke(255, 255, 0);
+   fill(0);
+   textSize(15);
+   text(product.name, 150, x + 30);
+   
+   text(product.price, 300, x + 30);
   }
+
 }
 
 void TillLayout()
@@ -87,5 +99,19 @@ void TillLayout()
   textSize(30);
   textAlign(CENTER, BOTTOM);
   text("Cafe Rubis Till System",420 ,50);
+  
+  
+  stroke (0);
+  
+  fill(0,0,0);
+  textSize(15);
+  text("Your Bill",620 ,100);
+  
+  
+   text("Total:",500 ,150);
+  
+  
+  
+  
   
 }
